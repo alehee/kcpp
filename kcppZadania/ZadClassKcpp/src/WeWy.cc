@@ -7,22 +7,22 @@ WeWy::WeWy()
 {
 }
 
-bool isEvenBit(int a)
+bool WeWy::isEvenBit(int a)
 {
     return (!(a & 1));
 }
 
-bool isEvenModulo(int a)
+bool WeWy::isEvenModulo(int a)
 {
     return a % 2 == 0;
 }
 
-bool isEvenConditional(int a)
+bool WeWy::isEvenConditional(int a)
 {
     return a % 2 == 0 ? true : false;
 }
 
-void FourthTask()
+void WeWy::FourthTask()
 {
     cout << " ZadParzystaCase \t Zadanie 4.4 \t Aleksander Heese 2023" << endl;
     cout << " Opcje: 1. bitowo, 2. modulo, 3. warunkowo" << endl;
@@ -53,7 +53,7 @@ void FourthTask()
     }
 }
 
-void loopWhile()
+void WeWy::loopWhile()
 {
     int a = 0;
     cout << " Petla while dla a++" << endl;
@@ -70,7 +70,7 @@ void loopWhile()
     }
 }
 
-void loopDoWhile()
+void WeWy::loopDoWhile()
 {
     int a = 0;
     cout << " Petla do-while dla a++" << endl;
@@ -87,7 +87,7 @@ void loopDoWhile()
     } while (++a < 5);
 }
 
-void loopFor()
+void WeWy::loopFor()
 {
     int a = 0;
     cout << " Petla for dla a++" << endl;
@@ -104,7 +104,7 @@ void loopFor()
     }
 }
 
-void FifthTask()
+void WeWy::FifthTask()
 {
     cout << " ZadPetle \t Zadanie 4.5 \t Aleksander Heese 2023" << endl;
     cout << " Kazda petla jest testowana z a=0 i warunkiem a<5" << endl;

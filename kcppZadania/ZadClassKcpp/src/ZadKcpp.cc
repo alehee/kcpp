@@ -9,25 +9,26 @@ ZadKcpp::ZadKcpp()
 
 void ZadKcpp::run()
 {
-start:
-    int menuOption = showMenu();
-    if (menuOption == 0)
-        goto exit;
-    else if (menuOption == 1)
-        showFunkcje();
-    else if (menuOption == 2)
-        showWeWy();
-    else
-        showOptionError();
-    goto start;
-exit:
+    while (true)
+    {
+        int menuOption = showMenu();
+        if (menuOption == 0)
+            break;
+        else if (menuOption == 1)
+            showFunkcje();
+        else if (menuOption == 2)
+            showWeWy();
+        else
+            showOptionError();
+    }
 }
 
 int ZadKcpp::showMenu()
 {
     int option;
 
-    cout << " Podsumowanie zadan \t Aleksander Heese 2023" << endl;
+    cout << endl
+         << " Podsumowanie zadan \t Aleksander Heese 2023" << endl;
     cout << "  1. Zadania 2.* 'Zwracanie przez funkcje'" << endl;
     cout << "  2. Zadania 4.* 'Operacje wejscia/wyjscia'" << endl;
     cout << "  0. Wyjscie" << endl;
@@ -41,10 +42,11 @@ void ZadKcpp::showFunkcje()
 {
     Funkcje funkcje = Funkcje();
 
-    int option = NULL;
-    while (option == NULL || option != 0)
+    int option = 1;
+    while (option != 0)
     {
-        cout << " Zadania 2.* 'Zwracanie przez funkcje'" << endl;
+        cout << endl
+             << " Zadania 2.* 'Zwracanie przez funkcje'" << endl;
         cout << "  1. ZadZwracanie \t Zadanie 2.1" << endl;
         cout << "  2. ZadPrzekazywanieTablic \t Zadanie 2.2" << endl;
         cout << "  3. ZadPrzekazywanieTablicKopia \t Zadanie 2.3" << endl;
@@ -67,10 +69,11 @@ void ZadKcpp::showWeWy()
 {
     WeWy wewy = WeWy();
 
-    int option = NULL;
-    while (option == NULL || option != 0)
+    int option = 1;
+    while (option != 0)
     {
-        cout << " Zadania 4.* 'Operacje wejscia/wyjscia'" << endl;
+        cout << endl
+             << " Zadania 4.* 'Operacje wejscia/wyjscia'" << endl;
         cout << "  1. ZadParzystaCase \t Zadanie 4.4" << endl;
         cout << "  2. ZadPetle \t Zadanie 4.5" << endl;
         cout << "  0. Wyjscie" << endl;

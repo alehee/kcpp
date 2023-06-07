@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.26)
+project(ZadClassKcpp)
+include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/src)
+file(GLOB sources "${PROJECT_SOURCE_DIR}/include/*.h" "${PROJECT_SOURCE_DIR}/src/*.cc" "${PROJECT_SOURCE_DIR}/main.cc")
+add_executable(ZadClassKcpp ${sources})

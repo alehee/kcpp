@@ -7,24 +7,24 @@ Funkcje::Funkcje()
 {
 }
 
-int byValue(int a)
+int Funkcje::byValue(int a)
 {
     return a + 2;
 }
 
-int &byReference(int a)
+int &Funkcje::byReference(int a)
 {
     a += 2;
     return a;
 }
 
-int *byPointer(int a)
+int *Funkcje::byPointer(int a)
 {
     a += 2;
     return &a;
 }
 
-int *byArray(int a)
+int *Funkcje::byArray(int a)
 {
     int r[2];
     r[0] = a;
@@ -32,7 +32,7 @@ int *byArray(int a)
     return r;
 }
 
-void FirstTask()
+void Funkcje::FirstTask()
 {
     cout << " ZadZwracanie \t Zadanie 2.1 \t Aleksander Heese 2023" << endl;
 
@@ -42,7 +42,7 @@ void FirstTask()
     cout << " byArray result: " << byValue(2) << endl;
 }
 
-void displayArray(int vals[])
+void Funkcje::displayArray(int vals[])
 {
     for (int i = 0; i <= sizeof(vals); i++)
     {
@@ -50,7 +50,7 @@ void displayArray(int vals[])
     }
 }
 
-void SecondTask()
+void Funkcje::SecondTask()
 {
     cout << " ZadPrzekazywanieTablic \t Zadanie 2.2 \t Aleksander Heese 2023" << endl;
 
@@ -58,7 +58,7 @@ void SecondTask()
     displayArray(vals);
 }
 
-void copyArray(int vals[], int cVals[])
+void Funkcje::copyArray(int vals[], int cVals[])
 {
     for (int i = 0; i <= sizeof(vals); i++)
     {
@@ -66,7 +66,7 @@ void copyArray(int vals[], int cVals[])
     }
 }
 
-void printArray(int vals[])
+void Funkcje::printArray(int vals[])
 {
     for (int i = 0; i <= sizeof(vals); i++)
     {
@@ -74,7 +74,7 @@ void printArray(int vals[])
     }
 }
 
-void ThirdTask()
+void Funkcje::ThirdTask()
 {
     cout << " ZadPrzekazywanieTablicKopia \t Zadanie 2.3 \t Aleksander Heese 2023" << endl;
 
