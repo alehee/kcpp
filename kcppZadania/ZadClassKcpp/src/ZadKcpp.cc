@@ -1,4 +1,4 @@
-#include "../include/ZadKcpp.h"
+#include "ZadKcpp.h"
 #include <iostream>
 
 using namespace std;

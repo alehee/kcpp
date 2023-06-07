@@ -1,4 +1,4 @@
-#include "../include/WeWy.h"
+#include "WeWy.h"
 #include <iostream>
 
 using namespace std;
